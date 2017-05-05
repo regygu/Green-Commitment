@@ -18,5 +18,12 @@ public class GreenCommitmentServer {
         this.in = new InputStreamReader(socket.getInputStream());
     }
 
+    public static void main(String[] args) {
+        try {
+            GreenCommitmentServer gcs = new GreenCommitmentServer();
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
